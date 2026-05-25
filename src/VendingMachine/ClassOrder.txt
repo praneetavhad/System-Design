@@ -1,0 +1,17 @@
+State Pattern
+Write in this order:
+1. State Interface
+2. Context Class
+3. Concrete States
+4. Supporting Entities
+5. Main
+
+
+
+1. Product
+2. State Interface
+3. VendingMachine
+4. IdleState
+5. HasMoneyState
+6. DispenseState
+7. Main

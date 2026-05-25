@@ -1,0 +1,7 @@
+Observer Pattern
+Write in this order:
+1. Observer Interface
+2. Subject Interface
+3. Concrete Subject (Shows)
+4. Concrete Observer (users)
+5. Main

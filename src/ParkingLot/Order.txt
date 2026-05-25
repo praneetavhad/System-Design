@@ -1,0 +1,19 @@
+1. Interface
+   - ParkingStrategy
+
+2. Models (Entities)
+   - Vehicle
+   - Car
+   - Bike
+   - ParkingSpot
+   - Ticket
+
+3. Strategy Implementations (optional)
+   - NearestParkingStrategy
+   - RandomParkingStrategy
+
+4. Core System Class
+   - ParkingLot
+
+5. Main Class
+   - Main

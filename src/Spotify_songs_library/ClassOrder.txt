@@ -1,0 +1,16 @@
+Strategy Pattern
+Write in this order:
+1. Strategy Interface
+2. Concrete Strategies
+3. Context Class
+4. Main Class
+
+
+Song
+User
+MusicLibrary
+PlayList
+SearchStartergy
+SearchByArtist
+SearchByTitle
+SearchEngine
