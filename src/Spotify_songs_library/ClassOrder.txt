@@ -6,11 +6,34 @@ Write in this order:
 4. Main Class
 
 
-Song
-User
-MusicLibrary
-PlayList
-SearchStartergy
-SearchByArtist
-SearchByTitle
-SearchEngine
+Strategy Pattern
+
+Write in this order:
+
+1. Entity Classes (Models)
+   - Song
+     Represents a song with title, artist, album, and genre.
+   - User
+     Represents a user who can create and manage playlists.
+   - MusicLibrary
+     Stores all available songs in the system.
+   - PlayList
+     Represents a playlist containing multiple songs created by a user.
+
+2. Strategy Interface
+   - SearchStartergy
+     Interface that defines different search algorithms (by title, by artist, by genre, etc.).
+
+3. Concrete Search Strategies
+   - SearchByArtist
+     Strategy that searches for songs by artist name.
+   - SearchByTitle
+     Strategy that searches for songs by title name.
+
+4. Context Class (Strategy Executor)
+   - SearchEngine
+     Uses a search strategy to search through songs based on different criteria.
+
+5. Main Class
+   - Main
+     Demonstrates the system by creating songs, playlists, and using different search strategies.

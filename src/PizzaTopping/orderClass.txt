@@ -1,15 +1,15 @@
-1. Pizza Interface
+1. Pizza Interface - Interface that defines the contract for all pizzas with getDescription() and cost() methods
 
 2. Base Pizza Classes
-   - MargheritaPizza
-   - VeggiePizza
+   - MargheritaPizza - Concrete pizza base with tomato and mozzarella costing 200.
+   - VeggiePizza - Concrete pizza base with vegetables costing 250
 
 3. Abstract Decorator
-   - ToppingDecorator
+   - ToppingDecorator - Abstract decorator that wraps a Pizza object to add toppings dynamically while maintaining the Pizza interface.
 
 4. Concrete Decorators
-   - CheeseDecorator
-   - MushroomDecorator
-   - OliveDecorator
+   - CheeseDecorator - Concrete decorator that adds cheese topping (+50 cost) to any pizza.
+   - MushroomDecorator - Concrete decorator that adds mushroom topping (+70 cost) to any pizza.
+   - OliveDecorator - Concrete decorator that adds olive topping (+40 cost) to any pizza.
 
-5. Main Class
+5. Main Class - Demonstrates the decorator pattern by stacking multiple toppings on a base pizza and calculating the total cost.

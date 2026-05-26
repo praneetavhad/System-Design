@@ -1,7 +1,10 @@
 Observer Pattern
 Write in this order:
-1. Observer Interface
-2. Subject Interface
-3. Concrete Subject (Shows)
-4. Concrete Observer (users)
-5. Main
+1. Observer Interface --- Interface that defines the update() method so all users can receive notifications.
+2. Subject Interface --- Interface that defines methods to manage observers (add, remove, notify).
+3. Concrete Subject (Shows) -- Concrete implementation of Subject that manages available seats and notifies all
+users when seats are booked or canceled.
+4. Concrete Observer (users) ---- Concrete implementation of Observer that receives and displays seat
+availability updates from Show.
+5. Main --- Demonstrates Observer Pattern by subscribing users to a show and triggering seat
+booking/cancellation events

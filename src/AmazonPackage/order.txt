@@ -1,0 +1,6 @@
+OTPGenerator.java --- Generates random security codes for unlocking lockers.
+Package.java  ---- Represents a package with ID and owner (userId).
+User.java ---- Represents a customer who receives packages.
+Locker.java  ----- Represents a physical locker that stores a package and validates access via OTP.
+LockerSystem.java  --- Core system that finds available lockers and manages locker operations (assign, open).
+Main.java  ---- Demonstrates how the entire system works by simulating a package delivery and pickup.

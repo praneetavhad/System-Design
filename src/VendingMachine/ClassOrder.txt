@@ -1,17 +1,29 @@
 State Pattern
+
 Write in this order:
-1. State Interface
-2. Context Class
-3. Concrete States
-4. Supporting Entities
-5. Main
 
+1. Supporting Entities
+   - Product
+     Represents a product with name and price available in the vending machine.
 
-
-1. Product
 2. State Interface
-3. VendingMachine
-4. IdleState
-5. HasMoneyState
-6. DispenseState
-7. Main
+   - State
+     Interface that defines the actions available in different states (insertMoney, selectProduct, dispense).
+
+3. Context Class
+   - VendingMachine
+     The main vending machine that holds current state and manages transitions between states.
+
+4. Concrete States
+   - IdleState
+     State when the machine is idle waiting for money; allows inserting money to transition to HasMoneyState.
+   - HasMoneyState
+     State after money is inserted; allows selecting a product and transitions to DispenseState if balance is sufficient.
+   - DispenseState
+     State when dispensing a product; dispenses the product and returns to IdleState.
+
+5. Main Class
+   - Main
+     Demonstrates the vending machine by inserting money, selecting a product, and dispensing it.
+
+

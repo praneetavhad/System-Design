@@ -1,19 +1,19 @@
 1. Interface
-   - ParkingStrategy
+   - ParkingStrategy ---- Interface that defines the algorithm to find an available parking spot (allows swapping strategies).
 
 2. Models (Entities)
-   - Vehicle
-   - Car
-   - Bike
-   - ParkingSpot
-   - Ticket
+   - Vehicle -- Abstract base class for different vehicle types (Car, Bike) with a unique vehicle number
+   - Car -- Concrete vehicle type representing a car that inherits from Vehicle.
+   - Bike -- Concrete vehicle type representing a Bike that inherits from Vehicle.
+   - ParkingSpot -- Represents a single parking space that can store a vehicle and track its occupancy status.
+   - Ticket -- Receipt issued when a vehicle is parked, containing vehicle and spot information.
 
 3. Strategy Implementations (optional)
-   - NearestParkingStrategy
-   - RandomParkingStrategy
+   - NearestParkingStrategy -- Strategy implementation that finds the nearest (first available) parking spot.
+   - RandomParkingStrategy -- Strategy implementation that finds a random available parking spot from the end.
 
 4. Core System Class
-   - ParkingLot
+   - ParkingLot - Core system that manages all parking spots and uses a strategy to find available spots for incoming vehicles
 
 5. Main Class
-   - Main
+   - Main - Demonstrates the parking lot system by parking a car using the nearest parking strategy.

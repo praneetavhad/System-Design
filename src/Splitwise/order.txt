@@ -1,0 +1,32 @@
+1. Model (Entity)
+   - User
+     Represents a user with ID and name in the expense-splitting system.
+
+2. Abstract Split Strategy
+   - Split
+     Abstract class that defines the interface for different expense split strategies (Equal, Exact, Percentage).
+
+3. Concrete Split Strategies
+   - EqualSplit
+     Split strategy that divides the expense equally among all users.
+   - ExactSplit
+     Split strategy where each user pays a specific fixed amount.
+   - PercentageSplit
+     Split strategy where each user pays a percentage of the total expense.
+
+4. Expense Model
+   - Expense
+     Represents an expense with amount, payer, and list of splits defining how it's divided.
+
+5. Utility Class
+   - BalanceSheet
+     Tracks who owes whom money using a nested map for maintaining individual balances.
+
+6. Core Service
+   - ExpenseService
+     Core service that processes expenses and updates the balance sheet based on splits.
+
+7. Main Class
+   - Main
+     Demonstrates the system by creating users, splitting an expense equally, and showing balances.
+
